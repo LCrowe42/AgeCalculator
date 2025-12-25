@@ -8,30 +8,46 @@
   
   <title>Frontend Mentor | Age calculator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  Day
-  DD
-
-  Month
-  MM
-
-  Year
-  YYYY
-
-  -- years
-  -- months
-  -- days
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="wrapper">
+    <form class="inputform">
+      <div class="dayinholder">
+        <label for="days">Day</label>
+        <input class="numinputs" type="number" id="daysin" value="01" min="1" max="31">
+      </div>
+      <div class="monthinholder">
+        <label for="months">Month</label>
+        <input class="numinputs" type="number" id="monthin" value="01" min="1" max="12">
+      </div>
+      <div class="yearinholder">
+        <label for="years">Year</label>
+        <input class="numinputs" type="number" id="yearsin" value="0000" max="10000">
+      </div>
+      <input type="submit" id="formsubmit">
+    </form>
+    <div class="line"></div>
+    <div class="outputholder">
+      <div class="yearsoutholder">
+        <output id="yearsout">--</output>
+        <p class="yearslabel">years</p>
+      </div>
+      <div class="monthsoutholder">
+        <output id="monthsout">--</output>
+        <p class="monthslabel">years</p>
+      </div>
+      <div class="daysoutholder">
+        <output id="days">--</output>
+        <p class="yearslabel">years</p>
+      </div>
+    </div>
   </div>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.linkedin.com/in/lucas-crowe-tu/">Lucas Crowe</a>.
+  </footer>
+  
+  <script src="script.js"></script>
 </body>
 </html>

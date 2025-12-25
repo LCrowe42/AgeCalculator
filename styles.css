@@ -1,0 +1,27 @@
+body {
+    background-color: rgb(236, 233, 217);
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+}
+.wrapper {
+    width: 800px;
+    background-color: rgb(255,255,255);
+    border-radius: 10px;
+    border-bottom-right-radius: 50px;
+}
+.inputform {
+    width: 600px;
+    display: flex;
+    justify-content: space-around;
+}
+.outputholder {
+    display: flex;
+    flex-direction: column;
+
+}
+.attribution {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
