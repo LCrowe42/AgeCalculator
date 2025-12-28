@@ -15,7 +15,7 @@
     <form class="inputform">
       <div class="dayinholder">
         <label for="days">Day</label>
-        <input class="numinputs" type="number" id="daysin" value="01" min="1" max="31">
+        <input class="numinputs" type="number" id="dayin" value="01" min="1" max="31">
       </div>
       <div class="monthinholder">
         <label for="months">Month</label>
@@ -23,9 +23,9 @@
       </div>
       <div class="yearinholder">
         <label for="years">Year</label>
-        <input class="numinputs" type="number" id="yearsin" value="0000" max="10000">
+        <input class="numinputs" type="number" id="yearin" value="0000" max="10000">
       </div>
-      <input type="submit" id="formsubmit">
+      <input type="submit" onclick="return calculateAge()" id="formsubmit">
     </form>
     <div class="line"></div>
     <div class="outputholder">
@@ -35,11 +35,11 @@
       </div>
       <div class="monthsoutholder">
         <output id="monthsout">--</output>
-        <p class="monthslabel">years</p>
+        <p class="monthslabel">months</p>
       </div>
       <div class="daysoutholder">
-        <output id="days">--</output>
-        <p class="yearslabel">years</p>
+        <output id="daysout">--</output>
+        <p class="yearslabel">days</p>
       </div>
     </div>
   </div>
