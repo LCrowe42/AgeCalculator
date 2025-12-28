@@ -6,26 +6,26 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Age calculator app</title>
+  <title>Age Calculator</title>
 
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="wrapper">
-    <form class="inputform">
+    <form class="inputform" onsubmit="return false;">
       <div class="dayinholder">
         <label for="days">Day</label>
         <input class="numinputs" type="number" id="dayin" value="01" min="1" max="31">
       </div>
       <div class="monthinholder">
         <label for="months">Month</label>
-        <input class="numinputs" type="number" id="monthin" value="01" min="1" max="12">
+        <select class="numinputs" name="month" id="monthin"></select>
       </div>
       <div class="yearinholder">
         <label for="years">Year</label>
-        <input class="numinputs" type="number" id="yearin" value="0000" max="10000">
+        <select class="numinputs" name="year" id="yearin"></select>
       </div>
-      <input type="submit" onclick="return calculateAge()" id="formsubmit">
+      <button type="submit" id="formsubmit"><img src="/assets/images/icon-arrow.svg"></button>
     </form>
     <div class="line"></div>
     <div class="outputholder">
