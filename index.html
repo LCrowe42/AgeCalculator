@@ -15,7 +15,7 @@
     <form class="inputform" onsubmit="return false;">
       <div class="dayinholder">
         <label for="days">Day</label>
-        <input class="numinputs" type="number" id="dayin" value="01" min="1" max="31">
+        <select class="numinputs" name="day" type="number" id="dayin"></select>
       </div>
       <div class="monthinholder">
         <label for="months">Month</label>
@@ -28,6 +28,7 @@
       <button type="submit" id="formsubmit"><img src="/assets/images/icon-arrow.svg"></button>
     </form>
     <div class="line"></div>
+    <div id="errormessage"></div>
     <div class="outputholder">
       <div class="yearsoutholder">
         <output id="yearsout">--</output>

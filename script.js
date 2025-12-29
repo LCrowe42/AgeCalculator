@@ -22,19 +22,29 @@ window.onload = function() {
         option.textContent = i;
         monthSelect.appendChild(option);
     }
+
+    const daySelect = document.getElementById("dayin");
+    for (let i = 31; i >= 1; i--) {
+        let option = document.createElement("option");
+        option.value = i;
+        option.textContent = i;
+        daySelect.appendChild(option);
+    }
 };
 
 function calculateAge() {
+    document.getElementById("errormessage").textContent = "";
     const dayin = parseInt(document.getElementById("dayin").value,10);
     const monthin = parseInt(document.getElementById("monthin").value,10);
     const yearin = parseInt(document.getElementById("yearin").value,10);
 
-    if (dayin > 31 || dayin < 1) {
-        return false;
-    }
-
     const birth = new Date(yearin,monthin-1,dayin)
     const today = new Date();
+
+    if (today - birth < 0) {
+        document.getElementById("errormessage").textContent = "*date must be in the past"
+        return false;
+    }
 
     var years = today.getFullYear() - birth.getFullYear();
     var months = today.getMonth() - birth.getMonth();

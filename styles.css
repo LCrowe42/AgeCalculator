@@ -22,7 +22,14 @@ body {
     display: flex;
     flex-direction: column;
     padding: 10px;
+    padding-left: 50px;
     height: 350px;
+}
+#errormessage {
+    padding-top: 10px;
+    padding-left: 50px;
+    font-size: 20px;
+    color: rgb(200, 30, 20);
 }
 .attribution {
     position: absolute;
@@ -40,6 +47,9 @@ body {
     height: 40px;
     border: 1px solid hsl(0, 1%, 44%);
     border-radius: 5px;
+}
+.numinputs:focus {
+    border-color: orange;
 }
 .yearsoutholder, .monthsoutholder, .daysoutholder {
     display: flex;
